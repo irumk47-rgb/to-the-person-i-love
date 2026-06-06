@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Fizza 💖</title>
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#fff5f8,#fffdf5);
+    font-family: 'Georgia', serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.card{
+    background:white;
+    width:80%;
+    max-width:800px;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+h1{
+    color:#ff6fa5;
+    font-size:50px;
+}
+
+p{
+    font-size:22px;
+    line-height:1.9;
+    color:#555;
+}
+
+.flower{
+    font-size:35px;
+}
+
+button{
+    background:#ffb6c1;
+    border:none;
+    padding:15px 25px;
+    font-size:18px;
+    border-radius:15px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+#message{
+    margin-top:25px;
+    font-size:25px;
+    font-weight:bold;
+    color:#ff6fa5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="flower">🌷 🌸 🌹 🌺 🌻 🌼</div>
+
+<h1>💖 For Fizza 💖</h1>
+
+<p>
+To my favorite human,
+my safe place,
+my happiness,
+and one of the best things that ever happened to me. 🌷
+</p>
+
+<p>
+Thank you for every laugh,
+every memory,
+every conversation,
+and every moment that became special because you were there. ✨
+</p>
+
+<p>
+Some people enter our lives and leave footprints.
+You painted entire gardens in mine. 🌸
+</p>
+
+<p>
+You are sunshine on difficult days,
+comfort on sad days,
+and joy on ordinary days. ☀️🤍
+</p>
+
+<p>
+No matter how many people I meet,
+there will always be a special place in my heart reserved just for you. 💌
+</p>
+
+<p>
+Thank you for being YOU. 🫶🌷
+</p>
+
+<button onclick="showLove()">
+💌 Open Secret Message
+</button>
+
+<div id="message"></div>
+
+</div>
+
+<script>
+
+function showLove(){
+
+const messages = [
+
+"🌷 You are appreciated more than you know.",
+
+"💖 You make the world a little brighter.",
+
+"🌸 Thank you for existing, Fizza.",
+
+"🫶 You are loved, valued and cherished.",
+
+"✨ My favorite human. Always.",
+
+"🌹 Life is better with you in it."
+
+];
+
+document.getElementById("message").innerHTML =
+messages[Math.floor(Math.random()*messages.length)];
+
+}
+
+</script>
+
+</body>
+
+</html>
